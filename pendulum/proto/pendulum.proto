@@ -5,8 +5,6 @@ package pendulum;
 service pendulum {
   rpc step(request_step) returns (state);
   rpc reset(request_reset) returns (state);
-  rpc get_state(empty) returns (state);
-  rpc stream_state(empty) returns (stream state);
 }
 
 message request_step {
