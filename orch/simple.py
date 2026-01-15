@@ -40,12 +40,6 @@ if __name__ == "__main__":
 
                     simulation_time.set(st.time)
                     writer.writerow([st.time, st.theta, st.omega])
-                    print(
-                        f"time={st.time:.2f}, "
-                        f"theta={st.theta:.4f}, "
-                        f"omega={st.omega:.4f}",
-                        flush=True,
-                    )
 
         except grpc.RpcError as err:
             print("simulation error:", err, flush=True)
