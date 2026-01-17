@@ -13,7 +13,7 @@ def calc_energy(theta: float, omega: float):
 def calc_torque(theta: float, omega: float):
     delta = target - calc_energy(theta, omega)
     if delta > 0: 
-        return delta * numpy.sign(omega)
+        return 1.000E+2 * delta * numpy.sign(omega)
     else: 
         return 0
 
